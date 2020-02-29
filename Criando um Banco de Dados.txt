@@ -1,0 +1,17 @@
+
+//Comando "create" para criar um Banco de Dados
+
+create database cadastro;
+
+
+//Comando "drop" para excluir um Banco de Dados
+drop database cadastro;
+
+
+
+//Comandos abaixo para adicionar a biblioteca utf8 para armazenar caracteres com acentos
+padrao latino/Brasil
+
+default character set	utf8
+
+default collate utf8_general_ci;
