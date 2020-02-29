@@ -1,0 +1,23 @@
+
+//O Comando "INSERT" é da classe DML (Data Manipulation Language, ou Linguagem de Manipulação de Dados)
+ou seja é usado para inserir dados a tabela do banco de dados
+
+
+// abaixo eu informo a tabela que os dados serão inseridos
+insert into pessoas
+
+(id,nome, nascimento, sexo, peso, altura, nacionalidade)
+
+
+// a CONST( constante ) "VALUES" serve para informar os valores que serão armazenados
+values
+
+//e abaixo segue os comandos que serão adicionados a tabela, na mesma ordem que os mesmos foram 
+definidos no "INSERT INTO"
+
+
+(default ,'Jose Andtonio','1955-11-4','M','83.80','1.88','Irlanda'),
+
+(default,'Ana Gabriela', '1990-04-2', 'f', '70.5', '1.53', 'Mexico'),
+
+(default, 'Bruno Paniagua','1998-04-6','M','105.0','1.78','Russia');
