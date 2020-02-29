@@ -1,0 +1,42 @@
+
+
+
+//Comando "create table" para criar tabelas
+
+create table pessoas(
+
+
+// No campo do "id" será armazenado a chave primaria
+aonde ela não permite que a mesma pessoa seja armazenada duas vezes
+
+id int not null auto_increment,
+
+
+//O comando "not null" é ultiizado para forçar que o campo nome seja prenchido
+sem ele o prencimento fica opcional
+
+nome varchar(30) not null, 
+
+nascimento date,
+
+
+//O comando "enum" forca que o campo sexo poderá receber somente "M" ou "F"
+
+sexo enum('M','F'),
+
+
+// No comando "decimal" é ultizado (x,y),aonde no x eu informo quantos numeros sera armazenados
+e no y eu informo quantas casas depois da virgula será armazenado
+
+peso decimal(5,2),
+
+
+altura decimal (3,2),
+
+
+nacionalidade varchar(20) default 'Brasil'
+
+
+//No comando "primary Key" eu informo ao meu Banco que o Id será minha chave primaria
+primary key (id)
+)DEFAULT CHARSET = utf8;
